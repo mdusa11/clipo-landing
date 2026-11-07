@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mdusa11.github.io/clipo-landing/sitemap.xml
