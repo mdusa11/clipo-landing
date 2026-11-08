@@ -28,6 +28,7 @@
 <meta name="twitter:description" content="Soporte de Clipo: cómo activar el teclado, el Acceso completo, los atajos de texto y qué hacer si algo no funciona.">
 <meta name="twitter:image" content="https://mdusa11.github.io/clipo-landing/og-image.png">
 <style>
+@font-face{font-family:"Schibsted Grotesk";src:url(fonts/schibsted-grotesk.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
 
 :root{
   --bg:#F2F2F7; --surface:#FFFFFF; --surface2:#E9E9EF; --ink:#0B0B0F; --ink2:#5E5E66; --ink3:#8E8E95;
@@ -56,7 +57,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:80px}
-body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:"Schibsted Grotesk",-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
 a{color:inherit}
 .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
 :focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:8px}
@@ -67,13 +68,13 @@ a{color:inherit}
 .brand svg{width:30px;height:30px;display:block}
 .nav-links{display:flex;gap:24px;margin-left:auto;font-size:15px;color:var(--ink2)}
 .nav-links a{text-decoration:none}.nav-links a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;background:#6B3DF5;color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;background:#6B3DF5;color:#fff}
 .doc{max-width:760px;margin:0 auto;padding:64px 32px 96px}
 .doc .eyebrow{font-size:14px;color:var(--ink2)}
-.doc h1{font-size:clamp(38px,5vw,60px);line-height:1;letter-spacing:-.04em;font-weight:700;margin-top:14px}
+.doc h1{font-size:clamp(34px,4.2vw,50px);line-height:1.08;letter-spacing:-.015em;font-weight:650;margin-top:10px}
 .doc .meta{color:var(--ink2);margin-top:16px;font-size:16px}
 .doc .meta strong{color:var(--ink);font-weight:600}
-.callout{background:var(--surface);box-shadow:var(--shadow);border-radius:20px;padding:20px 24px;margin-top:32px;color:var(--ink2);font-size:16.5px}
+.callout{background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);border-radius:12px;padding:20px 24px;margin-top:32px;color:var(--ink2);font-size:16.5px}
 .callout strong,.callout a{color:var(--ink)}
 .doc h2{font-size:24px;line-height:1.2;letter-spacing:-.02em;font-weight:700;margin:44px 0 12px}
 .doc h3{font-size:18px;font-weight:600;margin:24px 0 6px}
