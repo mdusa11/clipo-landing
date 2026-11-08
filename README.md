@@ -1,23 +1,24 @@
 # Clipo · landing
 
-Sitio estático de Clipo (teclado para iPhone con portapapeles). HTML + Tailwind compilado, sin frameworks.
-Publicado en GitHub Pages: https://mdusa11.github.io/clipo-landing/
+Sitio estático de Clipo (teclado para iPhone con portapapeles). HTML y CSS a mano, sin frameworks ni build.
+Publicado en GitHub Pages desde `main` (raíz): https://mdusa11.github.io/clipo-landing/
 
 ## Estructura
 
-- `index.html`, `privacy.html`, `terms.html`, `support.html`: páginas (rutas relativas: el sitio vive bajo `/clipo-landing/`).
-- `tailwind.config.js` + `tailwind.input.css` → `styles.css` (compilado, se commitea).
-- `img/`: capturas reales del simulador (WebP 420/640 + JPEG de respaldo) e íconos de los 6 temas.
-- `icons/`, `manifest.json`, `og-image.png` (1200×630), `robots.txt`, `sitemap.xml`.
+- `index.html`: la portada. Un solo archivo autocontenido (CSS y JS en línea; el teléfono interactivo se dibuja con HTML/SVG, sin imágenes).
+- `privacy.html`, `terms.html`, `support.html`: páginas legales y de ayuda. Cada una lleva su propio `<style>` con las mismas variables de color que la portada (claro/oscuro automático).
+- `og-image.png` (1200×630), `manifest.json`, `icons/`, `robots.txt`, `sitemap.xml`.
 
-## Recompilar CSS
+## Cómo editar
 
-```
-npx tailwindcss@3.4.17 -i tailwind.input.css -o styles.css --minify
-```
+- Abre el archivo y edita directo; no hay que compilar nada. Prueba con `python3 -m http.server` y abre `http://localhost:8000`.
+- Las rutas son relativas porque el sitio vive bajo `/clipo-landing/`.
+- Las preguntas frecuentes están dos veces: visibles en `index.html` (sección `#preguntas`) y en el JSON-LD `FAQPage` del `<head>`. Si cambias una, cambia la otra.
+- Si cambias la fecha de vigencia de una página legal, actualiza también `<lastmod>` en `sitemap.xml`.
+- Todo texto sobre el producto debe salir del inventario verificado (no prometer precio, prueba gratis, sincronización ni otras plataformas hasta que existan).
 
 ## Pendientes
 
-- Enlace de App Store: en `index.html` buscar `data-app-store` (reemplazar `href="#"`, quitar `aria-disabled`, cambiar "Próximamente en la" por "Descargar en la"). Hay un botón de TestFlight comentado junto a él.
-- Precio: hoy dice "precio de lanzamiento por anunciar" (sección `#precio`).
-- Dominio propio: crear un archivo `CNAME` con el dominio (por ejemplo `clipo.mx`) y cambiar las URLs absolutas (`canonical`, `og:*`, `sitemap.xml`, `robots.txt`, JSON-LD). NO existe `CNAME` todavía.
+- Enlace de App Store: cuando salga, cambiar los botones «Avísame» por el enlace y ajustar el estado «En desarrollo».
+- Precio: hoy se dice que se publicará aquí antes del lanzamiento (FAQ, `terms.html`, `support.html`).
+- Dominio propio: crear un archivo `CNAME` con el dominio (por ejemplo `clipo.mx`) y cambiar las URLs absolutas `https://mdusa11.github.io/clipo-landing/` en `index.html`, `privacy.html`, `terms.html`, `support.html` (canonical, `og:*`, `twitter:*`, JSON-LD), `sitemap.xml` y `robots.txt`. NO existe `CNAME` todavía.

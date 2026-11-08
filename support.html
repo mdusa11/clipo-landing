@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Soporte · Clipo</title>
-<meta name="description" content="Ayuda de Clipo: cómo activar el teclado, acceso completo, pegar desde otras apps, doble toque atrás y problemas comunes.">
+<meta name="description" content="Soporte de Clipo: cómo activar el teclado, el Acceso completo, los atajos de texto y qué hacer si algo no funciona.">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#F7F5FD" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0E0D12" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0B0D" media="(prefers-color-scheme: dark)">
 <meta name="author" content="Dusa Solutions">
 <link rel="canonical" href="https://mdusa11.github.io/clipo-landing/support.html">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta property="og:title" content="Soporte · Clipo">
-<meta property="og:description" content="Ayuda de Clipo: cómo activar el teclado, acceso completo, pegar desde otras apps, doble toque atrás y problemas comunes.">
+<meta property="og:description" content="Soporte de Clipo: cómo activar el teclado, el Acceso completo, los atajos de texto y qué hacer si algo no funciona.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Clipo">
@@ -22,140 +22,158 @@
 <meta property="og:image" content="https://mdusa11.github.io/clipo-landing/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Clipo: tu teclado de iPhone con portapapeles integrado. Logo de dos cuadros redondeados encimados sobre fondo uva.">
+<meta property="og:image:alt" content="Clipo: escribe como siempre, lo que copiaste a un toque.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Soporte · Clipo">
-<meta name="twitter:description" content="Ayuda de Clipo: cómo activar el teclado, acceso completo, pegar desde otras apps, doble toque atrás y problemas comunes.">
+<meta name="twitter:description" content="Soporte de Clipo: cómo activar el teclado, el Acceso completo, los atajos de texto y qué hacer si algo no funciona.">
 <meta name="twitter:image" content="https://mdusa11.github.io/clipo-landing/og-image.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400..800&family=JetBrains+Mono:wght@500;700&display=swap">
-<link rel="stylesheet" href="styles.css">
-<script>document.documentElement.classList.add('js')</script>
+<style>
+
+:root{
+  --bg:#F2F2F7; --surface:#FFFFFF; --surface2:#E9E9EF; --ink:#0B0B0F; --ink2:#5E5E66; --ink3:#8E8E95;
+  --line:rgba(0,0,0,.08); --acc:#6B3DF5; --acc-ink:#5A2EE6; --deep:#4A1FC9; --onacc:#fff;
+  --shadow:0 1px 2px rgba(0,0,0,.05),0 8px 24px -12px rgba(0,0,0,.18);
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue","Segoe UI",Roboto,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  /* teléfono */
+  --p-bg:#F2F2F7; --p-card:#FFFFFF; --p-ink:#000; --p-ink2:#8A8A8E; --p-fill:#EEEEF2; --p-sep:rgba(60,60,67,.18);
+  --kb-bg:#E2E4E8; --kb-key:#FFFFFF; --kb-press:#B0B3BA; --kb-ret:#BEBFC4; --kb-bal:#FFFFFF; --kb-sep:rgba(0,0,0,.10);
+  --kb-sug:#33343A; --kb-dim:#787A82; --kb-ink:#000; --kb-shadow:0 1px 0 rgba(0,0,0,.07); --kb-fill:#D3D5DB; --kb-card:#FFFFFF;
+  --c-bg:#EFEAE2; --c-head:#F7F7F7; --c-in:#FFFFFF; --c-out:#DCF7C5; --c-field:#FFFFFF; --c-line:rgba(0,0,0,.12);
+  --sys-blue:#007AFF; --sys-teal:#30B0C7; --sys-green:#34C759; --sys-mint:#00C7BE; --sys-purple:#AF52DE; --sys-indigo:#5856D6; --sys-orange:#FF9500; --sys-red:#FF3B30;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B0B0D; --surface:#1C1C1E; --surface2:#2C2C2E; --ink:#F5F5F7; --ink2:#A1A1A8; --ink3:#7C7C83;
+    --line:rgba(255,255,255,.10); --acc:#8F6BFF; --acc-ink:#A88CFF; --deep:#4A1FC9;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+    --p-bg:#000; --p-card:#1C1C1E; --p-ink:#fff; --p-ink2:#8D8D93; --p-fill:#2C2C2E; --p-sep:rgba(84,84,88,.6);
+    --kb-bg:#1B1B1D; --kb-key:#3D3D3D; --kb-press:#6B6B6B; --kb-ret:#666666; --kb-bal:#666666; --kb-sep:rgba(255,255,255,.12);
+    --kb-sug:#EDEDED; --kb-dim:#9E9E9E; --kb-ink:#fff; --kb-shadow:none; --kb-fill:#2E2E31; --kb-card:#2C2C2E;
+    --c-bg:#0B141A; --c-head:#161718; --c-in:#202C33; --c-out:#144D37; --c-field:#2A2B2D; --c-line:rgba(255,255,255,.10);
+    --sys-blue:#0A84FF; --sys-teal:#40C8E0; --sys-green:#30D158; --sys-mint:#63E6E2; --sys-purple:#BF5AF2; --sys-indigo:#5E5CE6; --sys-orange:#FF9F0A; --sys-red:#FF453A;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:8px}
+.sr{position:absolute;left:-9999px}.sr:focus{left:12px;top:12px;z-index:100;background:var(--surface);padding:10px 16px;border-radius:10px}
+.nav{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.01em;text-decoration:none}
+.brand svg{width:30px;height:30px;display:block}
+.nav-links{display:flex;gap:24px;margin-left:auto;font-size:15px;color:var(--ink2)}
+.nav-links a{text-decoration:none}.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;background:#6B3DF5;color:#fff}
+.doc{max-width:760px;margin:0 auto;padding:64px 32px 96px}
+.doc .eyebrow{font-size:14px;color:var(--ink2)}
+.doc h1{font-size:clamp(38px,5vw,60px);line-height:1;letter-spacing:-.04em;font-weight:700;margin-top:14px}
+.doc .meta{color:var(--ink2);margin-top:16px;font-size:16px}
+.doc .meta strong{color:var(--ink);font-weight:600}
+.callout{background:var(--surface);box-shadow:var(--shadow);border-radius:20px;padding:20px 24px;margin-top:32px;color:var(--ink2);font-size:16.5px}
+.callout strong,.callout a{color:var(--ink)}
+.doc h2{font-size:24px;line-height:1.2;letter-spacing:-.02em;font-weight:700;margin:44px 0 12px}
+.doc h3{font-size:18px;font-weight:600;margin:24px 0 6px}
+.doc p,.doc li{color:var(--ink2);font-size:17px;line-height:1.6}
+.doc p{margin-top:12px}
+.doc p strong,.doc li strong{color:var(--ink);font-weight:600}
+.doc ul,.doc ol{margin:12px 0 0 22px}.doc li{margin-top:6px}
+.doc a{color:var(--acc-ink);text-underline-offset:3px}
+.mono{font-family:var(--mono);font-size:.92em;background:var(--surface2);padding:1px 6px;border-radius:6px;color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:40px 0 56px;font-size:14px;color:var(--ink3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between}
+footer a{color:var(--ink2)}
+footer details{border:0;padding:0;margin-top:14px;max-width:760px}
+footer summary{font-size:14px;font-weight:600;color:var(--ink2);cursor:pointer}
+footer details li{margin:6px 0 0 18px;font-size:13px;line-height:1.5}
+@media (max-width:760px){.wrap{padding:0 20px}.nav-links{display:none}.nav .wrap{justify-content:space-between}.doc{padding:44px 20px 72px}}
+</style>
 </head>
 <body>
-<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-xl focus:bg-btn focus:px-4 focus:py-3 focus:font-bold focus:text-white">Saltar al contenido</a>
-<header class="sticky top-0 z-50 border-b border-line/10 bg-bg/90 backdrop-blur-md">
-  <div class="wrap flex h-16 items-center justify-between gap-4">
-    <a href="index.html" class="flex items-center gap-2.5 font-display text-2xl font-extrabold tracking-tight" aria-label="Clipo, inicio">
-      <img src="img/logo.png" width="36" height="36" alt="" class="h-9 w-9 rounded-[10px]"> Clipo
-    </a>
-    <nav class="hidden items-center gap-1 lg:flex" aria-label="Secciones"><a href="index.html#teclado" class="rounded-lg px-3 py-2 text-[15px] font-semibold text-muted transition hover:text-ink">Teclado</a><a href="index.html#portapapeles" class="rounded-lg px-3 py-2 text-[15px] font-semibold text-muted transition hover:text-ink">Portapapeles</a><a href="index.html#privacidad" class="rounded-lg px-3 py-2 text-[15px] font-semibold text-muted transition hover:text-ink">Privacidad</a><a href="index.html#temas" class="rounded-lg px-3 py-2 text-[15px] font-semibold text-muted transition hover:text-ink">Temas</a><a href="index.html#precio" class="rounded-lg px-3 py-2 text-[15px] font-semibold text-muted transition hover:text-ink">Precio</a><a href="index.html#preguntas" class="rounded-lg px-3 py-2 text-[15px] font-semibold text-muted transition hover:text-ink">Preguntas</a></nav>
-    <div class="flex items-center gap-2">
-      <a href="index.html#descargar" class="btn btn-primary !min-h-[44px] !rounded-xl !px-4 !text-[15px]">Descargar</a>
-      <details class="relative lg:hidden">
-        <summary class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-xl border border-line/15 bg-surf" aria-label="Menú">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </summary>
-        <div class="absolute right-0 top-14 w-64 rounded-2xl border border-line/10 bg-surf p-2 shadow-xl"><a href="index.html#teclado" class="block rounded-xl px-4 py-3 text-lg font-bold hover:bg-soft">Teclado</a><a href="index.html#portapapeles" class="block rounded-xl px-4 py-3 text-lg font-bold hover:bg-soft">Portapapeles</a><a href="index.html#privacidad" class="block rounded-xl px-4 py-3 text-lg font-bold hover:bg-soft">Privacidad</a><a href="index.html#temas" class="block rounded-xl px-4 py-3 text-lg font-bold hover:bg-soft">Temas</a><a href="index.html#precio" class="block rounded-xl px-4 py-3 text-lg font-bold hover:bg-soft">Precio</a><a href="index.html#preguntas" class="block rounded-xl px-4 py-3 text-lg font-bold hover:bg-soft">Preguntas</a></div>
-      </details>
-    </div>
+<a class="sr" href="#main">Saltar al contenido</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Clipo, inicio"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="23" fill="#6B3DF5"/><rect x="38" y="21" width="41" height="41" rx="10" fill="#4A1FC9"/><rect x="19" y="35" width="46" height="45" rx="11" fill="#fff" stroke="#6B3DF5" stroke-width="3"/></svg>Clipo</a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="index.html#como">Cómo se usa</a><a href="index.html#prueba">Pruébalo</a><a href="index.html#privacidad">Privacidad</a><a href="index.html#pronto">Cuándo sale</a>
+    </nav>
+    <a class="btn" href="mailto:contacto@dusasolutions.com?subject=Av%C3%ADsenme%20cuando%20salga%20Clipo">Avísame</a>
   </div>
 </header>
 <main id="main">
-<article class="mx-auto max-w-3xl px-5 py-14 sm:px-8 sm:py-20">
-  <p class="eyebrow">Ayuda</p>
-  <h1 class="mt-5 text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">Soporte de Clipo</h1>
-  <p class="mt-4 text-lg text-muted">Respuestas rápidas para sacarle provecho a tu teclado. Si no encuentras la tuya, escríbenos.</p>
+<article class="doc">
+  <p class="eyebrow">Legal</p>
+  <h1>Soporte</h1>
+  <p class="meta">Vigente desde el <strong>7 de noviembre de 2026</strong> · Responsable: Dusa Solutions</p>
+  <div class="callout">¿Algo no funciona? Escríbenos a <a href="mailto:contacto@dusasolutions.com?subject=Soporte%20Clipo">contacto@dusasolutions.com</a> con tu modelo de iPhone y la versión de iOS.</div>
 
-  <div class="callout mt-8">¿Algo no funciona? Escríbenos a <a class="font-bold underline underline-offset-4" href="mailto:contacto@dusasolutions.com?subject=Soporte%20Clipo"><span class="select-all">contacto@dusasolutions.com</span></a> con tu modelo de iPhone y la versión de iOS.</div>
+  <h2>Activar el teclado</h2>
+  <ol>
+    <li>Abre Clipo y toca <strong>Abrir Ajustes</strong> (o ve a Ajustes › General › Teclado › Teclados).</li>
+    <li>Toca <strong>Agregar teclado nuevo…</strong> y elige <strong>Clipo</strong>.</li>
+    <li>Entra a Clipo y activa <strong>Permitir acceso completo</strong>.</li>
+    <li>En cualquier app, mantén presionada la tecla del globo y elige <strong>Clipo</strong>.</li>
+  </ol>
 
-  <div class="prose-doc">
-    <h2>Activar el teclado</h2>
-    <ol>
-      <li>Abre Clipo y toca <strong>Abrir Ajustes</strong> (o ve a Ajustes › General › Teclado › Teclados).</li>
-      <li>Toca <strong>Agregar teclado nuevo…</strong> y elige <strong>Clipo</strong>.</li>
-      <li>Entra a Clipo y activa <strong>Permitir acceso completo</strong>.</li>
-      <li>En cualquier app, mantén presionada la tecla del globo 🌐 y elige <strong>Clipo</strong>.</li>
-    </ol>
+  <h2>¿Para qué es el Acceso completo?</h2>
+  <p>iOS lo exige para que un teclado lea el portapapeles y el historial que comparte con su app. Clipo lo usa solo para eso, dentro de tu iPhone: el código de Clipo no se conecta a internet y no envía nada. Más detalles en el <a href="privacy.html">aviso de privacidad</a>. Sin Acceso completo el teclado escribe, pero no puede mostrar tu historial.</p>
 
-    <h2>¿Para qué es el acceso completo?</h2>
-    <p>iOS lo exige para que un teclado lea el portapapeles y el historial que comparte con su app. Clipo lo usa solo para eso, dentro de tu iPhone: el teclado no tiene internet y no envía nada. Más detalles en la <a href="privacy.html">política de privacidad</a>. Sin acceso completo el teclado escribe, pero no puede mostrar tu historial.</p>
+  <h2>Cómo se guarda lo que copias</h2>
+  <p>Clipo guarda lo copiado cuando abres el teclado o la app, o cuando tocas «Guardar lo copiado». iOS no permite leer el portapapeles en segundo plano, y puede mostrarte su aviso de «pegar desde otras apps». Para que no vuelva a preguntar: <strong>Ajustes › Apps › Clipo › Pegar desde otras apps › Permitir</strong>.</p>
 
-    <h2>Pegar desde otras apps</h2>
-    <p>Cuando Clipo lee lo que copiaste en otra app, iOS puede preguntarte si permites pegar. Para que no vuelva a preguntar: <strong>Ajustes › Apps › Clipo › Pegar desde otras apps › Permitir</strong>.</p>
+  <h2>Guardar con doble toque en la espalda del iPhone</h2>
+  <p>Clipo incluye acciones para la app Atajos. Para guardar lo que copiaste con un doble toque atrás:</p>
+  <ol>
+    <li>Ajustes › Accesibilidad › Tocar › <strong>Tocar atrás</strong> › Toque doble.</li>
+    <li>Elige el atajo de Clipo <strong>Guardar portapapeles</strong> (aparece en la sección de Atajos).</li>
+  </ol>
+  <p>También existe <strong>Copiar el anterior</strong>, que copia el elemento que copiaste antes del último.</p>
 
-    <h2>Guardar con doble toque en la espalda del iPhone</h2>
-    <p>Clipo incluye acciones para la app Atajos. Para guardar lo que copiaste con un doble toque atrás:</p>
-    <ol>
-      <li>Ajustes › Accesibilidad › Tocar › <strong>Tocar atrás</strong> › Toque doble.</li>
-      <li>Elige el atajo de Clipo <strong>Guardar portapapeles</strong> (aparece en la sección de Atajos).</li>
-    </ol>
-    <p>También existe <strong>Copiar el anterior</strong>, que copia el elemento que copiaste antes del último.</p>
+  <h2>Crear un atajo de texto (por ejemplo, «@@»)</h2>
+  <p>Fija un elemento en la app (mantén presionado › Fijar). Cuando es un dato conocido, Clipo te propone un atajo: <span class="mono">@@</span> para un correo, <span class="mono">rfc</span>, <span class="mono">curp</span>, <span class="mono">clabe</span>, <span class="mono">tel</span> o <span class="mono">dir</span> para una dirección; también puedes escribir el tuyo (de 2 a 12 caracteres, sin espacios). Al escribir el atajo con el teclado de Clipo y dar espacio o un signo de puntuación, se reemplaza por el contenido fijado. Si borras justo después, regresa lo que escribiste.</p>
 
-    <h2>Crear un atajo de texto (por ejemplo, "@@")</h2>
-    <p>Fija un elemento en la app (mantén presionado › Fijar). Cuando es un dato conocido, Clipo te propone un atajo: <span class="mono">@@</span> para un correo, <span class="mono">rfc</span>, <span class="mono">curp</span>, <span class="mono">clabe</span>, <span class="mono">tel</span> o <span class="mono">dir</span> para una dirección; también puedes escribir el tuyo (de 2 a 12 caracteres, sin espacios). Al escribir el atajo con el teclado de Clipo y dar espacio o un signo de puntuación, se reemplaza por el contenido fijado.</p>
+  <h2>Signos ¿ y ¡</h2>
+  <p>Clipo puede poner los signos de apertura ¿ y ¡, pero solo si lo activas en los ajustes del teclado. Vienen apagados, como se escribe en los chats. Las tildes sí se ponen solas.</p>
 
-    <h2>Problemas comunes</h2>
-    <h3>El teclado no aparece en la lista</h3>
-    <p>Abre Clipo una vez, reinicia el iPhone y revisa Ajustes › General › Teclado › Teclados. Si sigue sin aparecer, escríbenos.</p>
-    <h3>El teclado no muestra mi historial</h3>
-    <p>Confirma que <strong>Permitir acceso completo</strong> está activo.</p>
-    <h3>No puedo usar Clipo en un campo de contraseña</h3>
-    <p>Es una regla de iOS: en campos seguros siempre aparece el teclado del sistema.</p>
-    <h3>No se guarda lo que copio</h3>
-    <p>Permite pegar desde otras apps (arriba). Clipo ignora a propósito lo que parece una contraseña al guardar desde Atajos, y los códigos de verificación se borran solos después de un rato.</p>
-    <h3>No inserta imágenes</h3>
-    <p>Un teclado de iOS solo puede escribir texto. Las imágenes se guardan en tu historial dentro de la app, desde donde las copias de nuevo para pegarlas.</p>
-    <h3>Perdí mi historial</h3>
-    <p>El historial vive solo en tu iPhone. Si borras la app o restableces el teléfono, se borra y no hay forma de recuperarlo desde nuestro lado.</p>
+  <h2>Problemas comunes</h2>
+  <h3>El teclado no aparece en la lista</h3>
+  <p>Abre Clipo una vez, reinicia el iPhone y revisa Ajustes › General › Teclado › Teclados. Si sigue sin aparecer, escríbenos.</p>
+  <h3>El teclado no muestra mi historial</h3>
+  <p>Confirma que <strong>Permitir acceso completo</strong> está activo.</p>
+  <h3>No puedo usar Clipo en un campo de contraseña</h3>
+  <p>Es una regla de iOS: en campos seguros siempre aparece el teclado del sistema.</p>
+  <h3>No se guarda lo que copio</h3>
+  <p>Permite pegar desde otras apps (arriba). Clipo no guarda lo que tu gestor de contraseñas marca como secreto, y los códigos de verificación de 4 a 8 dígitos que no estén fijados se borran solos después de un rato.</p>
+  <h3>No inserta imágenes</h3>
+  <p>Un teclado de iOS solo puede escribir texto. Las imágenes se guardan en tu historial dentro de la app; al tocarlas se copian y las pegas manteniendo el dedo en el campo.</p>
+  <h3>Perdí mi historial</h3>
+  <p>El historial vive solo en tu iPhone. Si borras la app o restableces el teléfono, se borra y no hay forma de recuperarlo desde nuestro lado.</p>
 
-    <h2>Compras y prueba gratis</h2>
-    <p>La prueba es de 7 días; después se paga una sola vez, sin suscripciones. Para reembolsos, entra a <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Para restaurar tu compra al reinstalar, usa el mismo Apple ID.</p>
+  <h2>Precio y disponibilidad</h2>
+  <p>Clipo aún no está en App Store; cuando salga, el precio y las condiciones se publicarán aquí.</p>
 
-    <h2>Compatibilidad</h2>
-    <p>Clipo es para iPhone con iOS 18 o posterior. Por ahora no hay versión para iPad.</p>
+  <h2>Compatibilidad</h2>
+  <p>Clipo es solo para iPhone con iOS 18 o posterior.</p>
 
-    <h2>Contacto</h2>
-    <p><a href="mailto:contacto@dusasolutions.com"><span class="select-all">contacto@dusasolutions.com</span></a> · Hecho en México por Dusa Solutions.</p>
-  </div>
+  <h2>Contacto</h2>
+  <p><a href="mailto:contacto@dusasolutions.com">contacto@dusasolutions.com</a> · Hecho en México por Dusa Solutions.</p>
 </article>
 </main>
-<footer class="border-t border-line/10 bg-surf2/50 pb-10 pt-14">
+<footer>
   <div class="wrap">
-    <div class="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
-      <div>
-        <a href="index.html" class="flex items-center gap-2.5 font-display text-2xl font-extrabold tracking-tight"><img src="img/logo.png" width="36" height="36" alt="" class="h-9 w-9 rounded-[10px]"> Clipo</a>
-        <p class="mt-4 max-w-sm text-muted">Tu teclado de iPhone con portapapeles integrado. Hecho en México por Dusa Solutions.</p>
-        <p class="mt-4 text-sm text-faint">Contacto: <a class="font-semibold text-uva underline underline-offset-4" href="mailto:contacto@dusasolutions.com"><span class="select-all">contacto@dusasolutions.com</span></a></p>
-      </div>
-      <nav aria-label="Legal y ayuda">
-        <p class="font-display text-sm font-bold uppercase tracking-[.1em] text-faint">Ayuda y legal</p>
-        <ul class="mt-4 space-y-2.5 font-semibold">
-          <li><a class="hover:text-uva" href="support.html">Soporte</a></li>
-          <li><a class="hover:text-uva" href="privacy.html">Privacidad</a></li>
-          <li><a class="hover:text-uva" href="terms.html">Términos</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Secciones del sitio">
-        <p class="font-display text-sm font-bold uppercase tracking-[.1em] text-faint">En esta página</p>
-        <ul class="mt-4 space-y-2.5 font-semibold">
-          <li><a class="hover:text-uva" href="index.html#teclado">Teclado</a></li>
-          <li><a class="hover:text-uva" href="index.html#portapapeles">Portapapeles</a></li>
-          <li><a class="hover:text-uva" href="index.html#precio">Precio</a></li>
-          <li><a class="hover:text-uva" href="index.html#preguntas">Preguntas</a></li>
-        </ul>
-      </nav>
+    <div>
+      <p>Clipo es de Dusa Solutions · Hecho en México · <a href="mailto:contacto@dusasolutions.com">contacto@dusasolutions.com</a></p>
+      <details><summary>Créditos y licencias</summary><ul>
+        <li>Diccionario basado en <a href="https://github.com/hermitdave/FrequencyWords">FrequencyWords</a> de Hermit Dave (subtítulos de OpenSubtitles), licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Modificado; se distribuye bajo la misma licencia.</li>
+        <li>Modelo de contexto con conteos derivados de oraciones de <a href="https://tatoeba.org">Tatoeba</a> (<a href="https://creativecommons.org/licenses/by/2.0/fr/">CC BY 2.0 FR</a>) y de <a href="https://commonvoice.mozilla.org">Mozilla Common Voice</a> (<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>), más frases de mensajería de México escritas para Clipo.</li>
+        <li>Nombres y palabras clave de emoji en español: Unicode CLDR; lista y orden de emoji: Unicode emoji-test 15.1. Copyright © 1991-2026 Unicode, Inc., <a href="https://www.unicode.org/license.txt">Unicode License v3</a>.</li>
+      </ul></details>
     </div>
-    <details class="mt-10 rounded-2xl border border-line/10 bg-surf p-5 text-sm leading-relaxed text-muted">
-      <summary class="cursor-pointer font-bold text-ink">Créditos y licencias</summary>
-      <ul class="mt-3 list-disc space-y-1.5 pl-5">
-        <li>Diccionario basado en <a class="underline underline-offset-2" href="https://github.com/hermitdave/FrequencyWords">FrequencyWords</a> de Hermit Dave (subtítulos de OpenSubtitles), licencia <a class="underline underline-offset-2" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Modificado; se distribuye bajo la misma licencia.</li>
-        <li>Modelo de contexto con conteos derivados de oraciones de <a class="underline underline-offset-2" href="https://tatoeba.org">Tatoeba</a> (<a class="underline underline-offset-2" href="https://creativecommons.org/licenses/by/2.0/fr/">CC BY 2.0 FR</a>) y de <a class="underline underline-offset-2" href="https://commonvoice.mozilla.org">Mozilla Common Voice</a> (<a class="underline underline-offset-2" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>), más frases de mensajería de México escritas para Clipo.</li>
-        <li>Nombres y palabras clave de emoji en español: Unicode CLDR; lista y orden de emoji: Unicode emoji-test 15.1. Copyright © 1991-2026 Unicode, Inc., <a class="underline underline-offset-2" href="https://www.unicode.org/license.txt">Unicode License v3</a>.</li>
-      </ul>
-    </details>
-    <p class="mt-8 text-sm text-faint">© 2026 Dusa Solutions · Hecho en México. iPhone, iOS y App Store son marcas de Apple Inc.; Clipo no está afiliado a Apple.</p>
+    <p><a href="privacy.html">Privacidad</a> · <a href="terms.html">Términos</a> · <a href="support.html">Soporte</a></p>
   </div>
 </footer>
-<script>
-(function(){
-  var els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
-  els.forEach(function(e){io.observe(e)});
-  document.querySelectorAll('header details a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open')})});
-})();
-</script>
 </body>
 </html>
