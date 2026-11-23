@@ -1,0 +1,6 @@
+# Landing de Clipo en Cloudflare: solo archivos estáticos.
+name = "clipo"
+compatibility_date = "2026-11-01"
+
+[assets]
+directory = "."
