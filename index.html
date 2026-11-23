@@ -1555,8 +1555,11 @@ function placeSteps(){
 }
 
 /* tamaño de los teléfonos */
+// En móvil la barra del navegador cambia innerHeight al hacer scroll: el tamaño se fija con el alto inicial
+// y solo se recalcula si cambia el ancho (girar el teléfono), para que la página no brinque.
+let fitW = innerWidth, fitH = innerHeight;
 function fit(){
-  const vh = innerHeight, vw = innerWidth, mob = vw < 1024;
+  const vh = innerWidth < 1024 ? fitH : innerHeight, vw = innerWidth, mob = vw < 1024;
   $$('.pw').forEach(pw => {
     const f = pw.dataset.fit; let s;
     if (mob) s = Math.min((vw - 72) / 430, 0.74, (vh - 230) / 902);
@@ -1714,6 +1717,8 @@ if (RM) {
 } else { makeIO(); updateBar(); }
 let lastMob = innerWidth < 1024;
 addEventListener('resize', () => {
+  if (innerWidth < 1024 && innerWidth === fitW) { updateBar(); return; }
+  fitW = innerWidth; fitH = innerHeight;
   fit();
   const changed = placeSteps();
   const mob = innerWidth < 1024;
