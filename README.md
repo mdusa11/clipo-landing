@@ -1,7 +1,7 @@
 # Clipo · landing
 
 Sitio estático de Clipo (teclado para iPhone con portapapeles). HTML y CSS a mano, sin frameworks ni build.
-Publicado en GitHub Pages desde `main` (raíz): https://mdusa11.github.io/clipo-landing/
+Publicado en GitHub Pages desde `main` (raíz): https://clippo.online/
 
 ## Estructura
 
@@ -21,4 +21,4 @@ Publicado en GitHub Pages desde `main` (raíz): https://mdusa11.github.io/clipo-
 
 - Enlace de App Store: cuando salga, cambiar los botones «Avísame» por el enlace y ajustar el estado «En desarrollo».
 - Precio: hoy se dice que se publicará aquí antes del lanzamiento (FAQ, `terms.html`, `support.html`).
-- Dominio propio: crear un archivo `CNAME` con el dominio (por ejemplo `clipo.mx`) y cambiar las URLs absolutas `https://mdusa11.github.io/clipo-landing/` en `index.html`, `privacy.html`, `terms.html`, `support.html` (canonical, `og:*`, `twitter:*`, JSON-LD), `sitemap.xml` y `robots.txt`. NO existe `CNAME` todavía.
+- Dominio propio: crear un archivo `CNAME` con el dominio (por ejemplo `clipo.mx`) y cambiar las URLs absolutas `https://clippo.online/` en `index.html`, `privacy.html`, `terms.html`, `support.html` (canonical, `og:*`, `twitter:*`, JSON-LD), `sitemap.xml` y `robots.txt`. NO existe `CNAME` todavía.
