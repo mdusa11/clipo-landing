@@ -1,6 +1,6 @@
-# Clipo · landing
+# Clippo · landing
 
-Sitio estático de Clipo (teclado para iPhone con portapapeles). HTML y CSS a mano, sin frameworks ni build.
+Sitio estático de Clippo (teclado para iPhone con portapapeles). HTML y CSS a mano, sin frameworks ni build.
 Publicado en GitHub Pages desde `main` (raíz): https://clippo.online/
 
 ## Estructura
