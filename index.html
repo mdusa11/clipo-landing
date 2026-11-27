@@ -914,11 +914,11 @@ const D = {
 const SC = {clabe:'clabe', rfc:'rfc', curp:'curp', dir:'addr', '@@':'mail', tel:'tel'};
 const PROF = {
   redes:{label:'Vendo por redes', desc:'Ejemplos: CLABE, dirección de envío y link del catálogo.', who:'Mariana', ini:'M', av:'#D9822B',
-    bar:['clabe','addr','cat'], copy:'clabe', older:'tel', ask:'¿Me pasas tu CLABE para el depósito?', note:['Para depósitos','Cuenta para que me depositen:'], sc:'clabe', scName:'CLABE'},
+    bar:['clabe','addr','cat'], copy:'clabe', older:'tel', ask:'¿Me pasas tu CLABE para el depósito?', note:['Para depósitos','Te paso:'], sc:'clabe', scName:'CLABE'},
   datos:{label:'Mando mis datos', desc:'Ejemplos: RFC, CURP y correo para facturas.', who:'Laura (oficina)', ini:'L', av:'#3D7FD9',
-    bar:['rfc','curp','mail'], copy:'rfc', older:'tel', ask:'¿Me pasas tu RFC para la factura?', note:['Datos fiscales','Mi RFC:'], sc:'rfc', scName:'RFC'},
+    bar:['rfc','curp','mail'], copy:'rfc', older:'tel', ask:'¿Me pasas tu RFC para la factura?', note:['Datos fiscales','Te paso:'], sc:'rfc', scName:'RFC'},
   rapido:{label:'Escribo rápido', desc:'Ejemplos: chat sin acentos, emoji sugerido y tu correo con @@.', who:'Diego', ini:'D', av:'#2F9E6E',
-    bar:['res','tel','mail'], copy:'res', older:'addr', ask:'¿Me pasas el link de la reserva?', note:['Reservación','Link para confirmar:'], sc:'mail', scName:'correo'},
+    bar:['res','tel','mail'], copy:'res', older:'addr', ask:'¿Me pasas el link de la reserva?', note:['Reservación','Te paso:'], sc:'mail', scName:'correo'},
 };
 let prof = PROF[store.get('clipoB.prof')] ? store.get('clipoB.prof') : 'redes';
 const P = () => PROF[prof];
